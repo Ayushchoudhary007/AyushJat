@@ -7,7 +7,7 @@
     <title>Ayush Jat | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,7 +21,9 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,12 +31,13 @@
     <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <p class="hero-eyebrow">Full Stack Developer</p>
-            <h1>Hi, I'm <span>Ayush</span></h1>
-            <p class="hero-sub">Building efficient, scalable, and production-ready full stack applications with a focus on performance.</p>
+            <p class="hero-eyebrow">/ full-stack developer</p>
+            <h1>Hi, I'm Ayush</h1>
+            <p class="hero-sub">Full-stack developer shipping scalable, production-ready applications end to end — from
+                database and API design to responsive frontends.</p>
             <div class="hero-cta">
                 <a href="#projects" class="btn-primary">View Projects</a>
-                <a href="#about" class="btn-ghost">About Me</a>
+                <a href="#contact" class="btn-ghost">Get In Touch</a>
             </div>
         </div>
         <div class="hero-img-wrap">
@@ -45,49 +48,96 @@
     <!-- About -->
     <section id="about" class="about-section">
         <div class="about-inner">
-            <span class="section-label">About</span>
+            <span class="kicker">/ about</span>
             <h2>Who I am</h2>
             <p>
-            I am a motivated Full Stack Developer passionate about building high-performance, scalable, and user-centric
-            applications using the modern JavaScript and TypeScript ecosystem. I enjoy solving complex problems and focus on
-            creating solutions that are not only functional but also efficient, maintainable, and production-ready.
-            
-            I have hands-on experience in developing responsive frontend applications using React , along with building
-            robust and scalable backend systems using Node.js and Express. I am also familiar with real-time application features
-            using WebSockets and follow modern development practices to ensure clean and optimized code.
-            
-            Alongside web development, I have a strong interest in Python and its libraries, which allows me to explore a wide range
-            of domains beyond full stack development. My curiosity drives me to continuously learn and experiment across different
-            areas of technology.
-            
-            As a fresher, I am actively strengthening my foundation in Data Structures, Algorithms, and System Design, and I am
-            eager to apply my skills to real-world projects. I am driven to grow as a developer, take on challenging problems, and
-            contribute to building impactful and scalable software solutions.
+                Full-stack developer skilled in JavaScript/TypeScript and Python, focused on shipping scalable,
+                production-ready applications end to end. I've designed and built two substantial personal systems:
+                an offline-first, cross-platform POS platform with a custom bidirectional sync engine, and a
+                distributed, polyglot web-crawling platform with a real-time NLP pipeline.
+            </p>
+            <p>
+                Comfortable across the stack — React, Node.js, FastAPI, PostgreSQL — and actively deepening Data
+                Structures &amp; Algorithms, system design, and automated testing practice as I grow toward
+                production engineering work.
             </p>
         </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="skills-section">
-        <span class="section-label">Skills</span>
+        <span class="kicker kicker-dark">/ skills</span>
         <h2>What I work with</h2>
-        <div class="skills-grid">
-            <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span>
-            <span>React</span><span>Tailwind</span><span>HTML</span>
-            <span>CSS</span><span>Redux</span><span>Axios</span><span>Socket.IO</span>
-            <span>JWT</span><span>OAuth</span>
-            <span>Node.js</span><span>Express.js</span><span>MySQL</span><span>PostgreSQL</span>
-            <span>Pandas</span><span>Numpy</span><span>Jupyter</span>
-            <span>Scikit-learn</span><span>TensorFlow</span>
-            <span>MongoDB</span><span>REST APIs</span><span>Git</span>
-            <span>GitHub</span><span>Firebase</span><span>Postman</span><span>Docker</span>
+        <div class="skills-columns">
+            <div class="skills-cat">
+                <h4>Languages</h4>
+                <div class="skills-grid">
+                    <span>JavaScript</span><span>TypeScript</span><span>Python</span>
+                </div>
+            </div>
+            <div class="skills-cat">
+                <h4>Frontend</h4>
+                <div class="skills-grid">
+                    <span>React</span><span>Redux</span><span>Axios</span><span>Tailwind CSS</span><span>Vite</span>
+                </div>
+            </div>
+            <div class="skills-cat">
+                <h4>Backend</h4>
+                <div class="skills-grid">
+                    <span>Node.js</span><span>Express.js</span><span>FastAPI</span><span>REST APIs</span>
+                    <span>Prisma ORM</span><span>JWT &amp; bcrypt Auth</span><span>WebSocket / Socket.IO</span>
+                </div>
+            </div>
+            <div class="skills-cat">
+                <h4>Databases</h4>
+                <div class="skills-grid">
+                    <span>PostgreSQL</span><span>MongoDB</span><span>SQLite (sql.js)</span><span>Redis</span>
+                </div>
+            </div>
+            <div class="skills-cat">
+                <h4>Systems &amp; ML</h4>
+                <div class="skills-grid">
+                    <span>Celery</span><span>BullMQ</span><span>Task Queues</span>
+                    <span>NLP Pipelines</span><span>Elasticsearch</span>
+                </div>
+            </div>
+            <div class="skills-cat">
+                <h4>Testing</h4>
+                <div class="skills-grid">
+                    <span>Jest</span><span>Vitest</span><span>Supertest</span><span>React Testing Library</span>
+                </div>
+            </div>
+            <div class="skills-cat">
+                <h4>Tools &amp; Platforms</h4>
+                <div class="skills-grid">
+                    <span>Git</span><span>GitHub</span><span>VS Code</span><span>Docker</span>
+                    <span>Firebase</span><span>Postman</span><span>Capacitor</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience-section">
+        <div class="about-inner">
+            <span class="kicker">/ experience</span>
+            <h2>Where I've worked</h2>
+            <div class="experience-item">
+                <div class="experience-head">
+                    <h4>Full Stack Web Development Intern &mdash; Upflairs Pvt. Ltd.</h4>
+                    <span class="experience-date">3 months</span>
+                </div>
+                <p>Built responsive React front-ends replicating production websites as part of a MERN-stack
+                    training program, strengthening component architecture, state management, and API-integration
+                    fundamentals.</p>
+            </div>
         </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="projects-section">
         <div class="projects-header">
-            <span class="section-label light">Projects</span>
+            <span class="kicker kicker-dark">/ projects</span>
             <h2>Things I've built</h2>
         </div>
 
@@ -97,11 +147,15 @@
                 <div class="slide slide-0">
                     <div class="slide-progress" id="sp0"></div>
                     <div class="slide-inner">
-                        <span class="slide-count">01 / 04</span>
+                        <span class="slide-count">01 / 03</span>
                         <span class="slide-tag">Web</span>
                         <h3>Travel Website</h3>
-                        <p>Full-stack-style React SPA with interactive maps, a 3D globe, live search and filter, and auth forms — built clean with
-                        a shared component architecture and zero external UI libraries.</p>
+                        <div class="stack-tags">
+                            <span>React</span><span>Maps API</span><span>Three.js</span>
+                        </div>
+                        <p>Full-stack-style React SPA with interactive maps, a 3D globe, live search and filter, and
+                            auth forms — built clean with
+                            a shared component architecture and zero external UI libraries.</p>
                         <div class="slide-links">
                             <a href="/comingSoon.html" class="btn-slide-live">Live</a>
                             <a href="#" class="btn-slide-gh">GitHub</a>
@@ -114,13 +168,19 @@
                 <div class="slide slide-1">
                     <div class="slide-progress" id="sp1"></div>
                     <div class="slide-inner">
-                        <span class="slide-count">02 / 04</span>
+                        <span class="slide-count">02 / 03</span>
                         <span class="slide-tag">E-commerce</span>
-                        <h3>TheShops</h3>
-                        <p>TheShop | React · TypeScript · Node.js · PostgreSQL · Capacitor
-                        Built a full-stack offline-first point-of-sale and inventory management application. Implemented a bidirectional sync
-                        engine with conflict resolution, JWT authentication with offline registration support, barcode scanning, and a
-                        glassmorphism UI. Designed a central Node.js server with Prisma ORM that syncs data across multiple devices.</p>
+                        <h3>TheShop</h3>
+                        <div class="stack-tags">
+                            <span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span>
+                            <span>Prisma</span><span>PostgreSQL</span><span>Capacitor</span>
+                        </div>
+                        <p>Architected a full-stack, offline-first POS platform running on web, Android, and iOS from
+                            one
+                            codebase, with local SQLite as the source of truth. Built a bidirectional sync engine with
+                            per-entity conflict resolution, JWT-based offline authentication, and role-based access
+                            control
+                            (30+ granular permissions) enforced identically on client and server.</p>
                         <div class="slide-links">
                             <a href="https://theshops.vercel.app" class="btn-slide-live">Live</a>
                             <a href="#" class="btn-slide-gh">GitHub</a>
@@ -129,15 +189,25 @@
                     <button class="snav prev" onclick="go(-1)">&#10094;</button>
                     <button class="snav next" onclick="go(1)">&#10095;</button>
                 </div>
-<!--
+
                 <div class="slide slide-2">
                     <div class="slide-progress" id="sp2"></div>
                     <div class="slide-inner">
-                        <span class="slide-count">03 / 04</span>
-                        <span class="slide-tag">App</span>
-                        <h3>Portfolio v2</h3>
-                        <p>Redesigned personal portfolio with dark mode, smooth transitions, and a filterable project
-                            showcase.</p>
+                        <span class="slide-count">03 / 03</span>
+                        <span class="slide-tag">Data / NLP</span>
+                        <h3>WebScrawler</h3>
+                        <div class="stack-tags">
+                            <span>React</span><span>Node.js</span><span>Python</span><span>FastAPI</span>
+                            <span>Celery</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
+                        </div>
+                        <p>Architected a distributed, polyglot crawling platform — a FastAPI orchestration layer,
+                            Node.js/BullMQ
+                            crawl workers, and Python/Celery ML workers unified by a 12-table PostgreSQL schema and a
+                            real-time
+                            WebSocket event bus. Ships a sandboxed plugin engine, a five-stage NLP pipeline (NER,
+                            sentiment,
+                            summarization, embeddings), multi-protocol downloading, and a REST API spanning 12+ resource
+                            types.</p>
                         <div class="slide-links">
                             <a href="#" class="btn-slide-live">Live</a>
                             <a href="#" class="btn-slide-gh">GitHub</a>
@@ -147,32 +217,37 @@
                     <button class="snav next" onclick="go(1)">&#10095;</button>
                 </div>
 
-                <div class="slide slide-3">
-                    <div class="slide-progress" id="sp3"></div>
-                    <div class="slide-inner">
-                        <span class="slide-count">04 / 04</span>
-                        <span class="slide-tag">Tool</span>
-                        <h3>Dev Dashboard</h3>
-                        <p>Internal developer dashboard for monitoring deployments, logs, and real-time system health
-                            metrics.</p>
-                        <div class="slide-links">
-                            <a href="#" class="btn-slide-live">Live</a>
-                            <a href="#" class="btn-slide-gh">GitHub</a>
-                        </div>
-                    </div>
-                    <button class="snav prev" onclick="go(-1)">&#10094;</button>
-                    <button class="snav next" onclick="go(1)">&#10095;</button>
-                </div> -->
-
             </div>
         </div>
 
         <div class="slide-dots" id="dots"></div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <span class="kicker kicker-dark">/ contact</span>
+        <h2>Let's build something</h2>
+        <p class="contact-sub">Open to full-stack roles and freelance work — reach out any time.</p>
+        <div class="contact-links">
+            <a href="mailto:Jatayushchoudhary@gmail.com" class="contact-link">
+                <span class="contact-label">Email</span>
+                <span>Jatayushchoudhary@gmail.com</span>
+            </a>
+            <a href="tel:+918279274888" class="contact-link">
+                <span class="contact-label">Phone</span>
+                <span>+91 82792 74888</span>
+            </a>
+            <a href="https://linkedin.com/in/ayush-jat007" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-label">LinkedIn</span>
+                <span>linkedin.com/in/ayush-jat007</span>
+            </a>
+        </div>
+        <a href="mailto:Jatayushchoudhary@gmail.com" class="btn-primary contact-cta">Say Hello</a>
+    </section>
+
     <!-- Footer -->
     <footer>
-        <p>Designed & built by <span>Ayush Jat</span> &copy; 2025</p>
+        <p>Designed & built by <span>Ayush Jat</span> &copy; 2026</p>
     </footer>
 
     <script src="script.js"></script>
